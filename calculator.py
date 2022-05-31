@@ -5,10 +5,5 @@ if __name__ == '__main__':
     y = cs50.get_int("y: ")
     print(x + y)
 
-    try:
-        a = int(input("a: "))
-        b = int(input("b: "))
-    except ValueError:
-        print("Not an int!")
-        exit()
-    print(a + b)
+    z = x / y
+    print(f"{z:.50f}")
