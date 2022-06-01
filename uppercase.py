@@ -14,6 +14,12 @@ def print_string_from(string, index):
     print()
 
 
+def print_string_until(string, slice_off_end):
+    for c in string[:-slice_off_end]:
+        print(c, end="")
+    print()
+
+
 if __name__ == "__main__":
     before = input("Input a string: ")
     after = uppercase_char_by_char(before)
@@ -24,3 +30,4 @@ if __name__ == "__main__":
     print(f"After: {after}")
 
     print_string_from(after, 2)
+    print_string_until(after, 1)
