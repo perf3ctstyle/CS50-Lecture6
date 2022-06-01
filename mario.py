@@ -18,9 +18,17 @@ def print_horizontal_and_vertical(number):
         print("#" * number)
 
 
+def print_recursively(number):
+    if number <= 0:
+        return
+    print_recursively(number-1)
+    print("#" * number)
+
+
 if __name__ == "__main__":
     height = get_height()
     print_horizontal(height)
     print()
     print_horizontal_and_vertical(height)
     print()
+    print_recursively(height)
