@@ -15,3 +15,6 @@ if __name__ == "__main__":
             if title not in titles:
                 titles[title] = 0
             titles[title] += 1
+
+    for title in sorted(titles, key=get_value, reverse=True):
+        print(title)
